@@ -441,6 +441,7 @@ def replay(method: Callable) -> None:
         print(f"{method.__qualname__}(*{input_.decode('utf-8')}) -> {output.decode('utf-8')}")
 
 # Example usage and test cases:
+"""
 if __name__ == "__main__":
     cache = Cache()
 
@@ -458,3 +459,4 @@ if __name__ == "__main__":
     print("outputs: {}".format(outputs))
 
     replay(cache.store)
+    """
